@@ -5,7 +5,7 @@ public class VariableIntro {
     public static void main(String[] args) {
 
         /*
-         *To Create a variable:
+         * To Create a variable:
          * datatype = name
          *
          */

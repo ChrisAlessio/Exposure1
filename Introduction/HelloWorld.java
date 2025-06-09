@@ -1,4 +1,6 @@
-// Create class HelloWorld
+package Introduction;
+
+// Create class Introduction.HelloWorld
 public class HelloWorld {
 
     // Create main method

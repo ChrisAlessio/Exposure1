@@ -29,12 +29,10 @@ public class Lab11avst
 
         // Student edits start here
         for(int i = 2; i < primes.length; i++){
-            int multiplier = 2;
-            if (i*multiplier == i);
-            {
-                primes[i] = false;
-            }
-            multiplier += 1;
+            primes[i] = true;
+
+        for(int j = i+i; j < primes.length; j=j+i){
+                primes[j] = false;   }
         }
 
         // Student edits end here

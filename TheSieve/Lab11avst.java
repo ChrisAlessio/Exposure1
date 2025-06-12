@@ -19,24 +19,24 @@ public class Lab11avst
         displayPrimes(primes);
     }
 
-    public static void computePrimes(boolean primes[])
-    {
+    public static void computePrimes(boolean primes[]) {
         System.out.println("\nCOMPUTING PRIME NUMBERS");
         // Assume everything is prime
-        for(int i = 2; i < primes.length; i++){
+        for (int i = 2; i < primes.length; i++) {
             primes[i] = true;
         }
 
         // Student edits start here
-        for(int i = 2; i < primes.length; i++){
-            primes[i] = true;
+        for (int i = 2; i < primes.length; i++) {
+            if (primes[i]) {
+                for (int t = i + i; t < primes.length; t = t + i) {
+                    primes[t] = false;
 
-        for(int j = i+i; j < primes.length; j=j+i){
-                primes[j] = false;   }
+                }
+
+            }
+
         }
-
-        // Student edits end here
-
     }
 
     public static void displayPrimes(boolean primes[])
@@ -54,5 +54,7 @@ public class Lab11avst
         System.out.println();
 
     }
+
+
 
 }
